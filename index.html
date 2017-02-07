@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper ">
+        <div class="script-wrapper">
+            <script type="text/template" id="myHTML">
+                <% for ( var i = 0; i < data.length; i++){%>
+
+                    <h1><%= data[i].userName %></h1>
+                    <figure><img src= <%= data[i].userPic%>></img>
+                    </figure>
+                    <span><%= data[i].userJob %></span>
+                    <h4>Хочу вчити фронтенд, тому що:</h4>
+                    <p>
+                        <%= data[i].userText %>
+                    </p>
+                    <h4>Мій контактний телефон:</h4>
+                    <span><%= data[i].userPhone %></span>
+                    <h4>Мій профіль в соцмережі:</h4>
+                    <a href= <%= data[i].userSocial %> >GitHub</a>
+
+                    <% } %>
+            </script>
+        </div>
+        <div class="another_wrapper">
+            <button type="button" name="button" class="prev-move">&lt;</button>
+            <div class="carousel-wrapper ">
+
+
+                <ul class="carousel-list">
+                    <li class="carousel-item">
+                        <img src="img/cat1.jpg" alt="">
+                        <p>this is cat #1</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat2.jpg" alt="">
+                        <p>this is cat #2</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat3.jpg" alt="">
+                        <p>this is cat #3</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat4.jpg" alt="">
+                        <p>this is cat #4</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat5.jpg" alt="">
+                        <p>this is cat #5</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat6.jpg" alt="">
+                        <p>this is cat #6</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat7.jpg" alt="">
+                        <p>this is cat #7</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat8.jpg" alt="">
+                        <p>this is cat #8</p>
+                    </li>
+                    <li class="carousel-item">
+                        <img src="img/cat9.jpg" alt="">
+                        <p>this is cat #9</p>
+                    </li>
+                </ul>
+
+            </div>
+            <button type="button" name="button" class="next-move">&gt;</button>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
