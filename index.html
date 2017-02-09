@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/tmpl.js"></script>
+    <script src="js/html_tmpl.js"></script>
+    <script src="js/jquery.my_carousel.js"></script>
     <script src="js/script.js"></script>
     <title>Document</title>
 </head>
@@ -19,7 +21,7 @@
                 <% for ( var i = 0; i < data.length; i++){%>
 
                     <h1><%= data[i].userName %></h1>
-                    <figure><img src= <%= data[i].userPic%>></img>
+                    <figure><img alt = "userPhoto" src= <%= data[i].userPic %>></img>
                     </figure>
                     <span><%= data[i].userJob %></span>
                     <h4>Хочу вчити фронтенд, тому що:</h4>
